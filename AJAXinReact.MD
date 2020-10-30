@@ -1,0 +1,2 @@
+Axios is a 3rd party package that can be downloaded to make a network AJAX request. It is installed by NPM.
+fetch function built into modern browsers to create an AJAX request. Axios is a library that makes calling fetch easier.
