@@ -8,8 +8,10 @@ class SearchBar extends React.Component {
     // the error that says "cant find state of undefinied"
     onFormSubmit = (e) => {
         // Prevents default submission usually html event stuff
-        e.preventDefault();
-        console.log(this.state.input)
+		e.preventDefault();
+		// the onSubmit function was passed a prop from App.js. to call it, use 'this.props.onSubmit'
+		// it takes the parameter 'this.state.input'. In the app, it console.logs the parameter.
+       this.props.onSubmit(this.state.input)
     }
 	render() {
 		return (
