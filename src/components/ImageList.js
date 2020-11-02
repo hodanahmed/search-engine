@@ -1,8 +1,9 @@
 import React from "react"
 
 const ImageList = (props) => {
-	const imglist = props.imagelist.map((img) => {
-		return <img alt={img.description} key={img.id} src={img.urls.regular}></img>
+	// Deconstructed the properties of image's description, id and urls.
+	const imglist = props.imagelist.map(({description, id, urls}) => {
+		return <img alt={description} key={id} src={urls.regular}></img>
 	})
 	return (
 		<div className="ui segment">
