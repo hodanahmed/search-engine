@@ -6,7 +6,7 @@ To do this, I passed a prop into the search bar component called 'onSubmit'. The
 the prop 'onSubmit' was set to a function (a callback function) called 'onSearchSubmit 
 which console.logs the first parameter.
 
-   ` class App extends React.Component {
+   class App extends React.Component {
         onSearchSubmit(input) {
             console.log(input)
         }
@@ -19,7 +19,7 @@ which console.logs the first parameter.
                 </div>
             )
         }
-    }`
+    }
 
 In the SearchBar component, I then refer to the onSubmit prop as 'this.props.onSubmit' 
 and set the functions parameter to 'this.state.input'. As stated before, the first
@@ -57,6 +57,6 @@ logged to the console.
 					</div>
 				</form>
 			</div>
-		)
-	}
-}`
+		        )
+	         }
+    }`
